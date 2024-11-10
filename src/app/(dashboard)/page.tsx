@@ -1,3 +1,7 @@
+import { Button } from "@/components/ui/button";
+
 export default function Dashboard (){
-    return <div> Dashboard</div>
+    return <div> Dashboard
+        <Button>Button</Button>
+    </div>
 }

@@ -55,17 +55,17 @@ const items = [
 
 export  default function AppSidebar() {
   return (
-    <Sidebar className="bg-teal-500">
-      <SidebarContent className="bg-teal-500">
+    <Sidebar>
+      <SidebarContent >
         <SidebarGroup>
           <SidebarGroupLabel className="text-white">SHOPPIN ADMIN</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton asChild >
                     <Link href={item.url} className="text-white font-bold">
-                      <item.icon size={32}/>
+                      <item.icon size={'lg'}/>
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
